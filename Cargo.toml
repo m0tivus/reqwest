@@ -162,6 +162,7 @@ features = [
     "Headers",
     "Request",
     "RequestInit",
+    "RequestRedirect",
     "RequestMode",
     "Response",
     "Window",
