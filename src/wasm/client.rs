@@ -185,7 +185,7 @@ async fn fetch(req: Request) -> crate::Result<Response> {
     let mut init = web_sys::RequestInit::new();
     init.method(req.method().as_str());
 
-    init.redirect(web_sys::RequestRedirect::Error);
+    init.redirect(web_sys::RequestRedirect::Manual);
 
     // convert HeaderMap to Headers
     let js_headers = web_sys::Headers::new()
